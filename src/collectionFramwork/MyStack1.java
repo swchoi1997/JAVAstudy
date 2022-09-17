@@ -83,7 +83,7 @@ class BackOrForward {
 
     public void enterSite(String site) {
         if (this.list.contains(site.toUpperCase(Locale.ROOT))) {
-            if (!this.current.isEmpty() && this.current.get(this.current.size() - 1).equals(site.toUpperCase(Locale.ROOT))) {
+            if (!current.isEmpty() && current.get(current.size() - 1).equals(site.toUpperCase(Locale.ROOT))) {
                 System.out.println("같은 페이지 입니다. === 새로고침 실행 ===");
                 return;
             }
